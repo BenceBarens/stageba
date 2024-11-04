@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100..900&display=swap');
 
-/* GENERAL */
+@keyframes paginaOvergang{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+main{
+    animation: paginaOvergang 0.5s;
+    min-height: 90%;
+}
+
+/* GENERAL ----------------------------------------------- */
 
 html, body{
     width: 100%;
@@ -11,14 +26,18 @@ html, body{
 
 a, p{
     font-family: "Poppins", sans-serif;
-    margin: .2rem;
     color: black;
     text-decoration: none;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: "Roboto Slab", serif;
     margin: .2rem;
+}
+
+h1{
+    text-align: center;
 }
 
 .button1{
@@ -27,6 +46,7 @@ h1, h2, h3, h4, h5, h6{
     color: white;
     border-radius: .5rem;
     padding: .5rem 1rem;
+    margin: .2rem;
 }
 
 .button1:hover, .button1:focus{
@@ -38,6 +58,7 @@ h1, h2, h3, h4, h5, h6{
     border: #404040 0.2rem solid;
     border-radius: .5rem;
     padding: .5rem 1rem;
+    margin: .2rem;
 }
 
 .button2:hover, .button2:focus{
@@ -45,22 +66,38 @@ h1, h2, h3, h4, h5, h6{
     background-color: #609a76;
 }
 
-/* HOMEPAGINA */
+/* HOMEPAGINA ------------------------------------------ */
 
 .home main{
     height: 100vh;
 }
 
-.home header img{
+.home header>img{
     width: 100%;
     position: absolute;
     top: 0;
     z-index: 2;
 }
 
+.home header nav{
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    z-index: 3;
+}
+
+.home header nav img{
+    height: 1.5rem;
+}
+
 .home main {
     display: flex;
     align-items: center;
+    background-color: white;
+}
+
+.home{
+    background-color: #404040;
 }
 
 .home main div{
@@ -86,19 +123,98 @@ h1, h2, h3, h4, h5, h6{
     z-index: 1;
 }
 
-.home footer div{
+.home footer nav{
     z-index: 5;
     position: absolute;
     bottom: 0;
-    background-color: white;
-    border: #404040 0.2rem solid;
+    background-color: #404040;
+    margin: 1rem;
     border-radius: .5rem;
-    margin: .5rem;
+    padding: .2rem;
 }
 
-.home footer div a{
-    background-color: #404040;
-    border-radius: .1rem;
-    margin: 0;
+.home footer nav a{
     color: white;
+    padding: 0 .2rem;
+}
+
+.home footer nav .selected{
+    background-color: white;
+    color:#404040;
+    border-radius: .2rem;
+}
+
+/* HEADER ------------------------------------------------ */
+
+.default-header {
+    padding: .5rem;
+    background-color: #ede82f;
+}
+
+.default-header img {
+    height: 1.5rem;
+}
+
+.default-header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.default-header summary{
+    list-style: none;
+    text-align: right;
+}
+
+.default-header nav li{
+    list-style: none;
+    margin-bottom: .5rem;
+}
+
+.default-header details{
+    text-align: right;
+}
+
+.currentpage{
+    font-weight: bold;
+}
+
+.verhaal main,
+.meedoen main,
+.ontwerp main{
+    padding: 2rem 1rem;
+}
+
+/* FOOTER -------------------------------------------- */
+
+.default-footer{
+    background-color: #404040;
+    display: flex;
+    padding: 1rem;
+    color: white;
+}
+
+.default-footer section{
+    width: 50%;
+}
+
+.default-footer p{
+    font-size: .9rem;
+    color: white;
+}
+
+.default-footer h2{
+    font-size: 1.2rem;
+}
+
+.default-footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+/* HET VERHAAL ------------------------------------------------ */
+
+.verhaal main section,
+.ontwerp main section{
+    display: flex;
+    justify-content: center;
 }

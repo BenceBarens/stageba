@@ -184,6 +184,53 @@ h1{
     padding: 2rem 1rem;
 }
 
+/* HET VERHAAL ------------------------------------------------ */
+
+.verhaal main section,
+.ontwerp main section{
+    display: flex;
+    justify-content: center;
+}
+
+/* MEEDOEN ------------------------------------------------ */
+
+.meedoen main section{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.counter{
+    background-color: #ede82f;
+    border-radius: 50rem;
+    width:3rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.counter p{
+    line-height: 1;
+    font-weight: bold;
+}
+
+.meedoen main section div{
+    max-width: 80%;
+}
+
+.meedoen main section .rightalign{
+    text-align: right;
+}
+
+.meedoen main section a{
+    text-decoration: underline;
+}
+
+.deelsectie{
+    display: flex;
+    justify-content: center;
+}
+
 /* FOOTER -------------------------------------------- */
 
 .default-footer{
@@ -191,6 +238,7 @@ h1{
     display: flex;
     padding: 1rem;
     color: white;
+    border-top:#609a76 .5rem solid;
 }
 
 .default-footer section{
@@ -209,12 +257,4 @@ h1{
 .default-footer a{
     color: white;
     text-decoration: underline;
-}
-
-/* HET VERHAAL ------------------------------------------------ */
-
-.verhaal main section,
-.ontwerp main section{
-    display: flex;
-    justify-content: center;
 }

@@ -22,6 +22,7 @@ html, body{
     height: 100%;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    background-color: #E3EDE7;
 }
 
 a, p{
@@ -87,13 +88,13 @@ h1{
 }
 
 .home header nav img{
-    height: 1.5rem;
+    height: 1.2rem;
 }
 
 .home main {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #E3EDE7;
 }
 
 .home{
@@ -148,11 +149,11 @@ h1{
 
 .default-header {
     padding: .5rem;
-    background-color: #ede82f;
+    background-color: #ebe615;
 }
 
 .default-header img {
-    height: 1.5rem;
+    height: 1.2rem;
 }
 
 .default-header nav{
@@ -180,7 +181,8 @@ h1{
 
 .verhaal main,
 .meedoen main,
-.ontwerp main{
+.ontwerp main,
+.social main{
     padding: 2rem 1rem;
 }
 
@@ -202,7 +204,7 @@ h1{
 }
 
 .counter{
-    background-color: #ede82f;
+    background-color: #ebe615;
     border-radius: 50rem;
     width:3rem;
     height: 3rem;
@@ -222,13 +224,38 @@ h1{
     text-align: right;
 }
 
-.meedoen main section a{
-    text-decoration: underline;
-}
-
 .deelsectie{
     display: flex;
     justify-content: center;
+}
+
+/* SOCIAL ------------------------------------------------------- */
+
+.social main{
+    text-align: center;
+}
+
+.social main section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.social main section>img{
+    width: 12rem;
+}
+
+.social main section ul img{
+    width: 2rem;
+}
+
+.social main section ul{
+    list-style: none;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* FOOTER -------------------------------------------- */
